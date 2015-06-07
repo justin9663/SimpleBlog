@@ -8,6 +8,6 @@ namespace SimpleBlog.ViewModels
         public string Username { get; set; }
 
         [Required, DataType(DataType.Password)]
-        public string Passwod { get; set; }
+        public string Password { get; set; }
     }
 }

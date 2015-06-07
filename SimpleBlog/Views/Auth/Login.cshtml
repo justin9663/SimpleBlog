@@ -4,21 +4,19 @@
     ViewBag.Title = "Login";
 }
 
-
-@using(Html.BeginForm())
+@using (Html.BeginForm())
 {
     @Html.ValidationSummary()
-    <div>
+    <section>
         @Html.LabelFor(x => x.Username)
         @Html.EditorFor(x => x.Username)
-    </div>
-    
-    <div>
-        @Html.LabelFor(x => x.Passwod)
-        @Html.EditorFor(x => x.Passwod)
-    </div>
-    
-    <div>
+    </section>
+    <section>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </section>
+    <section>
         <input type="submit" value="Login" />
-    </div>
+    </section>
+    
 }
